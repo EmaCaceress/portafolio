@@ -1,0 +1,210 @@
+/* Bloque principal */
+.contact {
+  position: relative;
+  padding: 3% 0%;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(to bottom, #001e36 0%, #000000 80%);
+  font-size: 1.5vw;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact__info {
+  display: flex;
+  justify-content: center;
+  padding: 5% 0%;
+  gap: 10%;
+  flex-wrap: wrap;
+}
+
+.contact__title {
+  font-weight: bold;
+  font-size: 3vw;
+  color: #fff;
+  animation: float 3s ease-in-out infinite;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact__social-link {
+  text-decoration: none;
+  color: white;
+  text-align: start;
+  display: inline-flex;
+  gap: 5%;
+  width: 35%;
+}
+
+.contact__social-text {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.contact__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 30%;
+  padding: 5px;
+  perspective: 500px;
+}
+
+.contact__description--pic {
+  width: 12vw;
+  height: 12vw;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 0px 20px rgba(57, 159, 255, 0.4);
+  margin-bottom: 1rem;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+}
+
+.contact__description--pic:hover {
+  cursor: pointer;
+}
+
+.contact__description--pic.rotate {
+  transform: rotateY(180deg);
+}
+
+.contact__description p {
+  text-align: left;
+}
+
+.contact__social-links {
+  width: 30%;
+  max-width: 50%;
+  gap: 33px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Typewriter { 
+  display: flex;
+  align-items: center;
+}
+
+.contact__social-icon {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.contact__social-icon:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.contact__closing {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.Typewriter__cursor {
+  animation: none !important;
+}
+
+@media (max-width: 768px) {
+
+  #contact{
+    scroll-margin-top: 80px;
+  }
+
+  .contact {
+    font-size: 4.5vw; /* Tamaño legible sin exagerar */
+    padding: 8% 5%;
+  }
+
+  .contact__title {
+    font-size: 7vw;
+    margin-bottom: 5%;
+  }
+
+  .contact__info {
+    flex-direction: column;
+    align-items: center;
+    gap: 8%;
+  }
+
+  .contact__description {
+    max-width: 95%;
+    font-size: 4.2vw;
+    text-align: center;
+    padding: 0 5%;
+    margin-bottom: 6%;
+  }
+
+  .contact__description--pic {
+    width: 45vw;
+    height: 45vw;
+    margin-bottom: 1rem;
+    animation: floatAndRotate 13s linear infinite;
+    cursor: auto;
+    margin: 3%;
+  }
+  
+  @keyframes floatAndRotate {
+    0% {
+      transform: translateY(0px) rotateY(0deg);
+    }
+    50% {
+      transform: translateY(-30px) rotateY(180deg);
+    }
+    100% {
+      transform: translateY(0px) rotateY(360deg);
+    }
+  }
+
+  .contact__description p {
+    font-size: 4vw;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .contact__social-links {
+    width: 90%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .contact__social-link {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.10);
+    border-radius: 12px;
+    transition: background 0.3s ease;
+  }
+
+  .contact__social-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .contact__social-text {
+    justify-content: center;
+    text-align: center;
+    font-size: 4vw;
+  }
+
+  .contact__social-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .contact__closing {
+    font-size: 4vw;
+    margin-top: 10%;
+  }
+
+  .Typewriter {
+    justify-content: center;
+    font-size: 4vw;
+  }
+}

@@ -1,0 +1,68 @@
+.back {
+  position: relative;
+  z-index: 0;
+}
+
+.back__imagerepeat {
+  width: 100%;
+  height: 20%;
+  background-image: url('../../assets/images/fondo.png');
+  background-repeat: repeat-x;
+  background-size: contain;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-position: bottom;
+  filter: brightness(0.4);
+  z-index: 5;
+}
+
+.back__whales {
+  position: relative;
+  display: flex;
+  justify-content: space-around; /* Distribuye las ballenas de forma uniforme */
+  width: 100%; /* Asegura que el contenedor ocupe el 100% del ancho */
+  height: 20vh; /* Altura completa para que las ballenas tengan suficiente espacio vertical */
+}
+
+.back__whales__whale {
+  animation: float 3s ease-in-out infinite;
+  position: relative; /* Usamos 'relative' para que se pueda animar dentro del contenedor */
+  width: 25%; /* Ajustamos el tamaño de cada ballena */
+}
+
+/* Estilos adicionales para las ballenas */
+.back__whales__whale:nth-child(1) {
+  transform: scale(1.75);
+}
+
+.back__whales__whale:nth-child(2) {
+  transform: scale(1.25);
+}
+
+.back__whales__whale:nth-child(3) {
+  transform: scale(1.5);
+}
+
+.back__imagerepeat__treasure {
+  padding-right: 1%;
+  padding-bottom: -1%;
+  transform: scale(0.7);
+}
+
+/* Definición de la animación de flotabilidad */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Subir las ballenas */
+  }
+  100% {
+    transform: translateY(0); /* Vuelve a su posición original */
+  }
+}

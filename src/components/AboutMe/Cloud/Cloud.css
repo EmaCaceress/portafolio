@@ -1,0 +1,55 @@
+.cloud {
+    position: absolute;
+    width: 90px;
+    height: 65px;
+    background: #eeeeee;
+    border-radius: 50%;
+    box-shadow: 
+      35px 0px 0 0 #eeeeee,
+      17px -17px 0 0 #eeeeee,
+      47px -10px 0 0 #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  
+  .cloud i {
+    font-size: 40px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    transition: all 1s ease;
+  }
+
+  .cloud i:hover {
+    transform: scale(1.15);
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  /* TABLETS */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .cloud:nth-child(1){/*REACT*/
+      top:8vh !important;
+    }
+    .cloud:nth-child(2){/*BD*/
+      top: 15.9vh !important;
+      left: 22.2vw !important;
+    }
+    .cloud:nth-child(3){/*JS*/
+      top: 8.9vh !important;
+      left: 36.1vw !important;
+    }
+    .cloud:nth-child(4){/*DOCKER*/
+      top:18vh !important;
+      left:55vw !important;
+    }
+    .cloud:nth-child(5){/*SASS*/
+      top:10vh !important;
+      left:70vw !important;
+    }
+  }

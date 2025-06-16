@@ -1,0 +1,248 @@
+/* Bloque principal para la sección de certificados */
+.certificates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  padding: 3% 0%;
+  overflow-x: hidden;
+  background: linear-gradient(to bottom, #00447c 0%, #002e57 100%);
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 3vw;
+  color: #fff;
+}
+
+.certificates__title-container {
+  width: 100%;
+  z-index: 20;
+  padding: 3% 5%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.certificates__title {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.certificates__slider-container{
+  width: 100vw;
+  position: relative;
+  padding: 5% 0%;
+  padding-bottom: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.certificates__slider {
+  display: flex;
+  transition: transform 1s ease-in-out;
+  z-index: 5;
+  width: 150%;
+  min-height: 55vh;
+}
+
+.certificates__slider__item {
+  justify-content: center;
+  width: 100vw;
+  align-items: center;
+  display: inline-flex;
+}
+
+.certificates__slider__image {
+  opacity: 0.5;
+  transition: opacity 0.4s ease-in-out, transform 1s ease-in-out;
+  width: 50%;
+  object-fit: cover;
+  transform: scale(1.25);
+}
+
+.certificates__slider__image--active {
+  opacity: 1;
+  transform: scale(2.25);
+  transform-origin: center center;
+}
+
+.certificates__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.certificates__button-container {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: rgb(250, 250, 250);
+  z-index: 6;
+  pointer-events: auto;
+}
+
+.certificates__button-container:nth-child(1) {
+  border-radius: 0% 50% 50% 0%;
+}
+
+.certificates__button-container:nth-child(2) {
+  border-radius: 50% 0% 0% 50%;
+}
+
+.certificates__button {
+  background-color: rgba(29, 28, 28, 0);
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  z-index: 10;
+}
+
+.certificates__button--prev::before,
+.certificates__button--next::before {
+  font-size: 2rem;
+  padding: 15px 15px;
+}
+
+/* MODAL */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  position: relative;
+}
+
+.modal-image {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+}
+
+.modal-close {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 3.5%;
+  right: 2.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-close button {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(250, 250, 250);
+  color: black;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  z-index: 1000;
+}
+
+.modal-close button:hover {
+  background-color: rgb(189, 189, 189);
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+
+  #certificates{
+    scroll-margin-top: 80px;
+  }
+
+  .certificates {
+    scroll-margin-top: 80px;
+    font-size: 7vw;
+    padding: 8% 0%;
+    gap: 0px;
+    overflow: visible;
+  }
+
+  .certificates__slider {
+    min-height: 40vh;
+    width: 150vw;
+  }
+
+  .certificates__slider-container{
+    overflow: hidden;
+  }
+
+  .certificates__slider__image {
+    transition: all 1s ease-in-out;
+    opacity: 0;
+  }
+
+  .certificates__slider__image--active {
+    opacity: 1;
+    transform: scale(1.1);
+    width: 170%;
+  }
+
+  .certificates__button {
+    font-size: 1.3rem;
+  }
+
+  .certificates__button-container {
+    height: 20%;
+    transition: opacity 0.1s;
+    opacity: 0.6;
+  }
+
+  .certificates__button-container:hover {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px){
+  .certificates__buttons {
+    top:auto;
+    height: auto;
+    min-height: 55vh;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1200px) and (orientation: portrait){
+  .certificates__slider {
+    min-height: 25vh;
+  }
+  .certificates__buttons {
+    top:auto;
+    height: auto;
+    min-height: 25vh;
+  }
+}

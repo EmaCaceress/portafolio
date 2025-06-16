@@ -1,0 +1,275 @@
+/*======================================
+=       SECCIÓN "ABOUT ME" GENERAL     =
+======================================*/
+
+.about-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    background: white;
+  }
+  
+  /* Fondo con nubes */
+  .about-container__clouds {
+    position: absolute;
+    height: 100vh;
+    background: linear-gradient(to bottom, #ccefff, #ffffff);
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /*======================================
+  =             MITAD IZQUIERDA          =
+  ======================================*/
+  
+  .about-container__left-half {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about-container__left-half-content {
+    width: 65%;
+  }
+  
+  .about-container__left-half-content span {
+    color: #0096ff;
+  }
+  
+  .about-container__left-half-content h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    display: inline-block;
+    transition: transform 1s ease;
+    transform-origin: left center;
+  }
+  
+  .about-container__left-half-content h2:hover {
+    transform: scale(1.15);
+  }
+  
+  .about-container__left-half-content p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .about-container__left-half-content input {
+    color: white;
+    background-color: #0096ff;
+    box-shadow: 0px 0px 12px 0.5px rgba(120, 110, 255, 0.2);
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    width: 90px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 45px;
+    user-select: none;
+  }
+  
+  .about-container__left-half-content input:hover {
+    box-shadow: 0px 0px 12px 1px rgba(255, 255, 255, 0.2);
+  }
+  
+  .about-container__left-half-content input:focus {
+    outline: none;
+    user-select: none;
+    box-shadow: 0px 0px 12px 1px rgba(255, 255, 255, 0.2);
+  }
+  
+  /*======================================
+  =             MITAD DERECHA            =
+  ======================================*/
+  
+  .about-container__right-half {
+    flex: 1;
+    min-height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-container__image-container {
+    display: flex;
+    justify-content: center;
+    border: 2px solid #0096ff;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 400px;
+    height: 60%;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0px 0px 12px 1px rgba(120, 110, 255, 0.2);
+  }
+  
+  .about-container__image-container-content {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+  
+  .about-container__image-container-content img {
+    height: 100%;
+    transition: all 1s;
+  }
+  
+  .about-container__image-container-content img:hover {
+    transform: scale(1.15);
+  }
+  
+  /*======================================
+  =           MEDIA QUERIES              =
+  ======================================*/
+  
+  @media screen and (max-width: 768px) and (orientation: portrait) {
+    .about-container {
+      flex-direction: column;
+    }
+    .about-container__left-half {
+      padding: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) and (orientation: landscape) {
+    .about-container {
+      flex-direction: row; /* o como lo tengas en escritorio */
+    }
+    .about-container__left-half {
+      padding: 0px 20px 20px 20px;
+    }
+  }
+  
+
+  /* MOBILES */
+  @media (max-width: 768px) {
+
+    #about-container{
+      scroll-margin-top: 80px;
+    }
+
+    .about-container {
+      height: 90vh;
+    }
+
+    .about-container__clouds {
+      display: none;
+    }
+  
+    .about-container__right-half {
+      padding: 20px;
+    }
+
+    .about-container__right-half {
+      padding: 0px;
+      flex: 1 1;
+      min-height: 0;
+    }
+  
+    .about-container__left-half-content {
+      width: 90%;
+      text-align: center;
+    }
+  
+    .about-container__left-half-content h2 {
+      font-size: 1.6rem;
+    }
+  
+    .about-container__left-half-content p {
+      font-size: 0.95rem;
+    }
+  
+    .about-container__image-container {
+      width: 100%;
+      height: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+      border: none;
+      box-shadow: none;
+      overflow: visible;
+      overflow-x: hidden;
+    }
+  
+    .about-container__image-container-content img {
+      width: 180%;
+      height: auto;
+    }
+  }
+
+  /* TABLETS */
+
+  @media (min-width: 768px) and (max-width: 1000px) {
+    
+    .about-container {
+      flex-direction: column;
+      height: 99vh;
+    }
+
+  
+    .about-container__left-half,
+    .about-container__right-half {
+      padding: 20px;
+    }
+
+    .about-container__right-half {
+      padding: 0px;
+      flex: 1 1;
+      min-height: 0;
+    }
+
+    .about-container__left-half{
+      justify-content: flex-end;
+    }
+  
+    .about-container__left-half-content {
+      width: 65%;
+      text-align: center;
+    }
+  
+    .about-container__left-half-content h2 {
+      font-size: 1.8rem;
+    }
+  
+    .about-container__left-half-content p {
+      font-size: 1.1rem;
+    }
+  
+    .about-container__image-container {
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      border: none;
+      box-shadow: none;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .about-container__clouds {
+      display: none;
+    }
+    .about-container__left-half{
+      justify-content: center;
+    }
+    .about-container__left-half-content h2 {
+      font-size: 2.5rem;
+    }
+  
+    .about-container__left-half-content p {
+      font-size: 1.2rem;
+    }
+    .about-container__left-half-content input{
+      font-size: 1.2rem;
+      width: 40%;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px){
+    .about-container__clouds {
+      display: none;
+    }
+  }
