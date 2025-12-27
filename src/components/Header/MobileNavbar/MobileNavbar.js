@@ -11,7 +11,7 @@ const MobileNavbar = () => {
       <div className="mobile-navbar__header">
         <a href="#about-container" className="mobile-navbar__logo">EC</a>
         <button onClick={() => setIsOpen(!isOpen)} className="mobile-navbar__toggle">
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
+          {isOpen ? <X size={50} /> : <Menu size={50} />}
         </button>
       </div>
 

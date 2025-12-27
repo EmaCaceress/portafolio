@@ -1,7 +1,7 @@
 /* ====== HEADER GENERAL ====== */
 .header {
   width: 100%;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   z-index: 2;
@@ -13,10 +13,9 @@
 
 /* ====== CONTENEDOR DEL HEADER ====== */
 .header__container {
-  width: 100%;
+  width: 1200px;
   margin: 0 auto;
-  padding: 0 30px;
-  height: 8vh;
+  padding: 10px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -177,10 +176,16 @@
   }
 }
 
-  
-@media (min-width: 768px) and (max-width: 1024px){
-  .header{
-    padding: 1%;
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .mobile-navbar__header {
+    padding: 0px 50px;
+  }
+  .mobile-navbar__logo {
+    padding: 2.5%;
+    font-size: 30px;
+  }
+  .mobile-navbar__menu {
+    font-size: 28px;
   }
 }
-

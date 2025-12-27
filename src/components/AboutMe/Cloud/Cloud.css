@@ -12,8 +12,7 @@
     align-items: center;
     justify-content: end;
     animation: float 6s ease-in-out infinite;
-  }
-  
+  } 
   
   .cloud i {
     font-size: 40px;
@@ -29,27 +28,4 @@
   @keyframes float {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
-  }
-
-  /* TABLETS */
-  @media (min-width: 768px) and (max-width: 1024px) {
-    .cloud:nth-child(1){/*REACT*/
-      top:8vh !important;
-    }
-    .cloud:nth-child(2){/*BD*/
-      top: 15.9vh !important;
-      left: 22.2vw !important;
-    }
-    .cloud:nth-child(3){/*JS*/
-      top: 8.9vh !important;
-      left: 36.1vw !important;
-    }
-    .cloud:nth-child(4){/*DOCKER*/
-      top:18vh !important;
-      left:55vw !important;
-    }
-    .cloud:nth-child(5){/*SASS*/
-      top:10vh !important;
-      left:70vw !important;
-    }
   }
