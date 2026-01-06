@@ -181,11 +181,24 @@
   .mobile-navbar__header {
     padding: 0px 50px;
   }
+  .header__container {
+    padding: 25px 50px;
+  }
   .mobile-navbar__logo {
     padding: 2.5%;
     font-size: 30px;
   }
-  .mobile-navbar__menu {
+  .header__nav-link {
     font-size: 28px;
+  }
+  .header__title {
+    font-size: 32px;
+    width: 70px;
+  }
+  .header__title--full {
+    margin: 25px;
+  }
+  .header__title:hover {
+    width: auto;
   }
 }

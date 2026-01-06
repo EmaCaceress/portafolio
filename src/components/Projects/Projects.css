@@ -222,3 +222,23 @@
       min-height: 300px;
     }
   }
+
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .projects-section__info-title {
+      font-size: 2.5rem;
+    }
+    .projects-section__info {
+      font-size: 1.5rem;
+    }
+    .badge {      
+      font-size: 1.2rem;
+    }
+    .projects-section h2 {
+      font-size: 3rem;
+    }
+
+    .projects-section__card {
+    max-width: 700px;
+    min-height: 500px;
+    }
+  }

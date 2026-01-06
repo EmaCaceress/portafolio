@@ -266,17 +266,30 @@
       align-items: center;
     }
     .about-container__left-half{
+      flex-grow: 1;
       justify-content: center;
+      width: 700px;
+      max-width: 850px;
+      min-width: 350px;
+      flex-shrink: 1;
+    }
+    .about-container__left-half-content {
+      width: auto;
     }
     .about-container__left-half-content h2 {
       font-size: 3.5rem;
+      white-space: normal;
     }
   
     .about-container__left-half-content p {
-      font-size: 1.5rem;
+      font-size: 1.75rem;
     }
     .about-container__left-half-content input{
-      font-size: 1.4rem;
+      font-size: 1.75rem;
       width: 40%;
+    }
+    .about-container__right-half{
+      flex-grow: 2;
+      justify-content: center;
     }
   }
