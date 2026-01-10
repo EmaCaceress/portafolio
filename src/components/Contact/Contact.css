@@ -107,19 +107,20 @@
   animation: none !important;
 }
 
-@media (max-width: 768px) {
+/* Mobiles */
+@media (max-width: 768px), (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
 
   #contact{
     scroll-margin-top: 80px;
   }
 
   .contact {
-    font-size: 4.5vw; /* Tamaño legible sin exagerar */
+    font-size: 2rem; /* Tamaño legible sin exagerar */
     padding: 8% 5%;
   }
 
   .contact__title {
-    font-size: 7vw;
+    font-size: 1.6rem;
     margin-bottom: 5%;
   }
 
@@ -131,10 +132,11 @@
 
   .contact__description {
     max-width: 95%;
-    font-size: 4.2vw;
     text-align: center;
     padding: 0 5%;
     margin-bottom: 6%;
+    font-size: 0.95rem;
+    line-height: 1.5;
   }
 
   .contact__description--pic {
@@ -158,12 +160,6 @@
     }
   }
 
-  .contact__description p {
-    font-size: 4vw;
-    line-height: 1.5;
-    text-align: center;
-  }
-
   .contact__social-links {
     width: 90%;
     max-width: 100%;
@@ -175,9 +171,9 @@
 
   .contact__social-link {
     width: 100%;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 0px 20px;
+    min-height: 94px;
     background-color: rgba(255, 255, 255, 0.10);
     border-radius: 12px;
     transition: background 0.3s ease;
@@ -189,22 +185,43 @@
 
   .contact__social-text {
     justify-content: center;
-    text-align: center;
-    font-size: 4vw;
+    font-size: 1rem;
+    overflow-wrap: anywhere;
+    word-break: break-word;
   }
 
   .contact__social-icon {
-    width: 32px;
-    height: 32px;
+    width: 50px;
+    height: 50px;
   }
 
   .contact__closing {
-    font-size: 4vw;
-    margin-top: 10%;
+    font-size: 1.2rem;
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+  .contact__title {
+    font-size: 3rem;
   }
 
-  .Typewriter {
-    justify-content: center;
-    font-size: 4vw;
+  .contact__description p {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+
+  .contact__social-text {
+    font-size: 1.75rem;
+  }
+  .contact__closing {
+    font-size: 1.75rem;
+  }
+  .contact__social-link {
+    width: 90%;
+  }
+  .contact__social-icon {
+    width: 72px;
+    height: 72px;
   }
 }

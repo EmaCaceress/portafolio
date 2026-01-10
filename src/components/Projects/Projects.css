@@ -190,11 +190,13 @@
     max-height: none;
     min-height: 320px;
     padding: 3%;
+    justify-content: space-around;
   }
 
   .projects-section__images {
     width: 100%;
     min-height: 150px;
+    height: 300px;
   }
 
   .projects-section__info {

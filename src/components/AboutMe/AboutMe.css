@@ -171,6 +171,7 @@
 
     .about-container__content{
       width: 100%;
+      flex-direction: column;
     }
 
     .about-container__clouds {
@@ -179,16 +180,20 @@
   
     .about-container__right-half {
       padding: 20px;
-    }
-
-    .about-container__right-half {
       padding: 0px;
       flex: 1 1;
       min-height: 0;
+      width: 100%;
+      min-width: auto;
+    }
+    .about-container__left-half{
+      width: 100%;
+      min-width: auto;
     }
   
     .about-container__left-half-content {
       text-align: center;
+      padding: 0px 15px;
     }
   
     .about-container__left-half-content h2 {
