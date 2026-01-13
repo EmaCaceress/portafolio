@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Typewriter from 'typewriter-effect';
 import './Contact.css';
 
 const Contact = () => {
@@ -19,7 +18,7 @@ const Contact = () => {
     {
       id: 3,
       icono: "https://img.icons8.com/?size=100&id=60688&format=png&color=FFFFFF",
-      link: "mailto:emanuelchacon1@outlook.com",
+      link: "emanuelchacon1@outlook.com",
       empresa: "correo",
     }
   ];

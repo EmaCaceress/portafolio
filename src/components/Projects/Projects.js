@@ -25,14 +25,14 @@ const projects = [
     title: "Ecommerce Delivery",
     issuedBy: "Pato escabio es un ecommerce de una tienda de bebidas noctura creada para un familiar donde se cargaron combos y productos desde un backend",
     link: "https://www.coursera.org/certificado/javascript",
-    image: "https://instagram.faep6-1.fna.fbcdn.net/v/t51.2885-19/468783147_600370432333397_1392689755834878986_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_ht=instagram.faep6-1.fna.fbcdn.net&_nc_cat=105&_nc_oc=Q6cZ2AH94G7HfveuTZ1pPIQ2Hu8pwmiHWeCplrBODtVHwNxvL-acF98N8Rg-NE6KzREM_5g&_nc_ohc=GthGVMEZNp4Q7kNvgHjgb4l&_nc_gid=fd9fda0c01b041cea87d7d22634289a4&edm=ALGbJPMBAAAA&ccb=7-5&oh=00_AYAMczhqF-y-ITVY7x5_aVLFX7LP6fDsZiQ7-JrTHjkOPQ&oe=67C63B42&_nc_sid=7d3ac5",
+    image: "",
     badge:["REACT", "SASS", "FIREBASE", "EXPRESS"],
   },
   {
     title: "Calculadora",
     issuedBy: "Es una calculadora intuitiva que te ayuda a hacer calculos matematicos simples :)",
     link: "https://www.coursera.org/certificado/javascript",
-    image: "https://via.placeholder.com/150",
+    image: "",
     badge:["REACT", "TYPESCRIPT", "DOCKER", "SASS"],
   },
 ];
