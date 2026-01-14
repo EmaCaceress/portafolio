@@ -1,24 +1,28 @@
 import React from "react";
 import './Projects.css';
 import wave from '../../assets/images/wave3.png'; // Importa la imagen
+import sureña from '../../assets/images/sureña.png'; // Importa la imagen
+import sureñalogo from '../../assets/images/sureñalogo.jpg'; // Importa la imagen
+import meli from '../../assets/images/mercadolibre.png'; // Importa la imagen
+import melilogo from '../../assets/images/melilogo.svg'; // Importa la imagen
+
 import Wave from "../Wave/Wave";
 // Datos de ejemplo (en un proyecto real estos podrían provenir de una API o archivo JSON)
 const projects = [
   {
     title: "Ecommerce muebleria",
     issuedBy: "La Sureña S.A es un pagina web de comercializacion para un negocio de la localidad de Berazategui donde se exciben sus productos",
-    link: "https://www.google.com/certificado/frontend",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_DUUdLGhcb5wa-QYwU3zxFqXO-rY6Xh5-1g&s",
-    Imagepreview:"https://media.licdn.com/dms/image/v2/C4D22AQGOprhMxMPp0g/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1663264962062?e=1752105600&v=beta&t=kgy3gR5Qo7CrW-WLtKBGLnQFQ73aEJz2E2jgYJlbUJQ",
+    link: "https://la-surena.vercel.app/",
+    image: sureñalogo,
+    Imagepreview:sureña,
     badge:["JS", "SASS"],
   },
   {
     title: "Ecommerce MELI",
     issuedBy: "El proyecto de MELI es una imitacion a grandes rasgos de lo que es la pagina de mercado libre, en este proyecto se trabajo con una API para poder mostrar sus productos",
-    link: "https://www.udemy.com/certificado/react",
-    Imagepreview:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjYZsCiBKQxHy2GEYN6XxU9TPXN5-bhlE6zQ&s",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT23rApmx5etQsJS921E7L1p01kSdXPpMAWxA&s",
-
+    link: "https://mercadolibre-omega.vercel.app/",
+    Imagepreview:meli,
+    image: melilogo,
     badge:["REACT", "SASS", "API REST"],
   },
   { 
@@ -43,7 +47,7 @@ const Projects = () => {
       <h2>💻 Mis creaciones en acción 🚀</h2>
       <div className="projects-section__container">
         {projects.map((proj, index) => (
-          <div key={index} className="projects-section__card">
+          <a key={index} className="projects-section__card" href={proj.link} target="_blank" rel="noopener noreferrer">
             <div className="projects-section__images">
               <img src={proj.image} alt={proj.title} className="projects-section__images__img" />
               <img src={proj.Imagepreview} alt={proj.title} className="projects-section__images__img--preview" />
@@ -61,7 +65,7 @@ const Projects = () => {
               ))}
               </div>  
             </div>
-          </div>
+          </a>
         ))}
       </div>
       <Wave wave={wave}></Wave>

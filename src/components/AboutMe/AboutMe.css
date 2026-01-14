@@ -162,6 +162,7 @@
   @media (max-width: 768px) {
 
     #about-container{
+      height: 89dvh;
       scroll-margin-top: 80px;
     }
 
