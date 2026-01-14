@@ -5,17 +5,19 @@ import sureña from '../../assets/images/sureña.png'; // Importa la imagen
 import sureñalogo from '../../assets/images/sureñalogo.jpg'; // Importa la imagen
 import meli from '../../assets/images/mercadolibre.png'; // Importa la imagen
 import melilogo from '../../assets/images/melilogo.svg'; // Importa la imagen
+import lmemlogo from '../../assets/images/lmemlogo.svg'; // Importa la imagen
+import lmem from '../../assets/images/lmem.png'; // Importa la imagen
 
 import Wave from "../Wave/Wave";
 // Datos de ejemplo (en un proyecto real estos podrían provenir de una API o archivo JSON)
 const projects = [
   {
     title: "Ecommerce muebleria",
-    issuedBy: "La Sureña S.A es un pagina web de comercializacion para un negocio de la localidad de Berazategui donde se exciben sus productos",
+    issuedBy: "La Sureña es una muebleria ficticia, en este proyecto se desarrollo un ecommerce completo con carrito de compras, gestion de usuarios y productos",
     link: "https://la-surena.vercel.app/",
     image: sureñalogo,
     Imagepreview:sureña,
-    badge:["JS", "SASS"],
+    badge:["JS", "CSS", "RESPONSIVE DESIGN", "MONGODB", "EXPRESS"],
   },
   {
     title: "Ecommerce MELI",
@@ -23,21 +25,23 @@ const projects = [
     link: "https://mercadolibre-omega.vercel.app/",
     Imagepreview:meli,
     image: melilogo,
-    badge:["REACT", "SASS", "API REST"],
+    badge:["REACT", "SASS", "API REST", "DESKTOP", "VITE"],
   },
   { 
-    title: "Ecommerce Delivery",
-    issuedBy: "Pato escabio es un ecommerce de una tienda de bebidas noctura creada para un familiar donde se cargaron combos y productos desde un backend",
-    link: "https://www.coursera.org/certificado/javascript",
-    image: "",
-    badge:["REACT", "SASS", "FIREBASE", "EXPRESS"],
+    title: "La mente es maravillosa",
+    issuedBy: "Es una pagina web informativa sobre la salud mental y el bienestar emocional. Proporciona artículos, consejos y recursos para promover una mente sana.",
+    link: "https://la-mente-es-maravillosa.vercel.app/",
+    image: lmemlogo,
+    Imagepreview:lmem,
+    badge:["REACT", "CSS", "RESPONSIVE DESIGN", "COOLABORATIVE PROJECT"],
   },
   {
-    title: "Calculadora",
-    issuedBy: "Es una calculadora intuitiva que te ayuda a hacer calculos matematicos simples :)",
-    link: "https://www.coursera.org/certificado/javascript",
+    title: "MisFinanzas",
+    issuedBy: "Esta pagina te ayuda a llevar un control de tus finanzas personales, permitiendote calcular ingresos, gastos y ahorros de manera sencilla y eficiente.",
+    link: "https://desktop-finance-calculator.vercel.app/",
     image: "",
-    badge:["REACT", "TYPESCRIPT", "DOCKER", "SASS"],
+    Imagepreview: "",
+    badge:["REACT", "VITE", "TYPESCRIPT", "SASS", "DESKTOP", "MONGODB", "NODEJS"],
   },
 ];
 
