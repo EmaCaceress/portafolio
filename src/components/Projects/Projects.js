@@ -35,14 +35,14 @@ const projects = [
     Imagepreview:lmem,
     badge:["REACT", "CSS", "RESPONSIVE DESIGN", "COOLABORATIVE PROJECT"],
   },
-  {
-    title: "MisFinanzas",
-    issuedBy: "Esta pagina te ayuda a llevar un control de tus finanzas personales, permitiendote calcular ingresos, gastos y ahorros de manera sencilla y eficiente.",
-    link: "https://desktop-finance-calculator.vercel.app/",
-    image: "",
-    Imagepreview: "",
-    badge:["REACT", "VITE", "TYPESCRIPT", "SASS", "DESKTOP", "MONGODB", "NODEJS"],
-  },
+  // {
+  //   title: "MisFinanzas",
+  //   issuedBy: "Esta pagina te ayuda a llevar un control de tus finanzas personales, permitiendote calcular ingresos, gastos y ahorros de manera sencilla y eficiente.",
+  //   link: "https://desktop-finance-calculator.vercel.app/",
+  //   image: "",
+  //   Imagepreview: "",
+  //   badge:["REACT", "VITE", "TYPESCRIPT", "SASS", "DESKTOP", "MONGODB", "NODEJS"],
+  // },
 ];
 
 const Projects = () => {

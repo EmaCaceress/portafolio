@@ -11,6 +11,9 @@ const LoadingScreen = () => {
     setTimeout(() => {
       setIsLoading(false); // Después de 7 segundos, cambiamos el estado a false
     }, 7000);
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 600);
   }, []);
 
   return (
