@@ -3,13 +3,13 @@ import React, { useState } from 'react';
 import '../Header.css'; // reutilizamos el mismo archivo de estilos
 import { Menu, X } from 'lucide-react'; // Asegúrate de tener esta librería instalada o cambia por SVGs
 
-const MobileNavbar = () => {
+const MobileNavbar = ({event}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="mobile-navbar">
       <div className="mobile-navbar__header">
-        <a href="#about-container" className="mobile-navbar__logo">EC</a>
+        <div onClick={()=> event()} className="mobile-navbar__logo">EC</div>
         <button onClick={() => setIsOpen(!isOpen)} className="mobile-navbar__toggle">
           {isOpen ? <X size={50} /> : <Menu size={50} />}
         </button>

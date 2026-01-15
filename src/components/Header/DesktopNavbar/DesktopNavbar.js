@@ -1,13 +1,13 @@
 // src/components/MobileNavbar.jsx
 import '../Header.css'; // reutilizamos el mismo archivo de estilos
 
-const DesktopNavbar = () => {
+const DesktopNavbar = ({event}) => {
   return (
     <div className="header__container">
-    <a href="#about-container" className="header__title">
+    <div onClick={()=> event()} className="header__title">
       <span className="header__title--incomplete">EC</span>
       <span className="header__title--full">Emanuel Chacon</span>
-    </a>
+    </div>
     
     <nav className="header__nav">
       <ul className="header__nav-list">

@@ -8,10 +8,14 @@ import DesktopNavbar from "./DesktopNavbar/DesktopNavbar";
 const Header = () => {
   const { globalValue } = useContext(GlobalContext);
 
+  const onStart = () => {
+    window.scrollTo(0, 0);
+  }
+
   return (
     <header className="header" style={{display:`${ globalValue }`}}>
-      <DesktopNavbar/>
-      <MobileNavbar/>
+      <DesktopNavbar event={onStart}/>
+      <MobileNavbar event={onStart}/>
     </header>
   );
 };
